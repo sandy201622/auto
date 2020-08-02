@@ -12,4 +12,7 @@ class TestViews:
         # 获取toastText来断言是否正确
         assert self.toast_text=="Clicked popup menu item Search"
 
+    def test_webview(self):
+        self.views.into_webview()
+
 
