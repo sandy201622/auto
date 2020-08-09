@@ -2,7 +2,7 @@
 
 import pytest
 
-
+#修改pytest方法，自动添加标签，覆盖整个方法
 def pytest_collection_modifyitems(session, config, items:list):
     for item in items:
         if 'add' in item.nodeid:
